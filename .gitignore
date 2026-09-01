@@ -1,0 +1,30 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# --- Virtual environments ---
+.venv/
+
+# --- Flask ---
+instance/
+*.db
+*.sqlite3
+.env
+.flask_env
+
+# --- PyCharm ---
+.idea/
+
+# --- macOS ---
+.DS_Store
+
+# --- Logs ---
+*.log
+
+
+# --- Node / npm ---
+node_modules/
+package*.json
