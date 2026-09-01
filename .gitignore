@@ -28,3 +28,4 @@ instance/
 # --- Node / npm ---
 node_modules/
 package*.json
+.prettierrc
