@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/mushrooms')
+@app.route('/mushroom-guide')
 def mushroom_guide():
     return render_template('mushroom-guide.html')
 
