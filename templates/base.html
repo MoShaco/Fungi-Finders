@@ -12,6 +12,7 @@
     <title>{% block title %}{% endblock %}</title>
   </head>
   <body>
+    <a class="skip-to-main" href="#main">Skip to main content</a>
     <header class="site-header">
       <div class="wrapper" data-type="wide">
         <div class="site-header__inner">
@@ -35,7 +36,7 @@
       </div>
     </header>
 
-    <main>{% block content %}{% endblock %}</main>
+    <main id="main">{% block content %}{% endblock %}</main>
     <footer class="site-footer">
       <p class="site-footer__title">Happy Foraging!</p>
       <a href="mailto:contact@fungifinders.com">contact@fungifinders.com</a>
