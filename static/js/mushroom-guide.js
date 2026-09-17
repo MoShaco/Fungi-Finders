@@ -11,6 +11,8 @@ const currentFilters = {
 seasonFilter.addEventListener('change', updateFilters);
 edibleFilter.addEventListener('change', updateFilters);
 
+enableFiltering();
+
 function updateFilters(event) {
   const filterType = event.target.name;
   currentFilters[filterType] = event.target.value;
@@ -34,4 +36,9 @@ function filterCards(event) {
   });
 
   noResultMessage.hidden = hasVisibleCard;
+}
+
+function enableFiltering() {
+  seasonFilter.hidden = false;
+  edibleFilter.hidden = false;
 }
