@@ -439,6 +439,12 @@
     border-radius: var(--border-radius-2);
   }
 
+  .no-match {
+    font-size: var(--font-size-md);
+    font-weight: 700;
+    color: var(--text-high-contrast);
+  }
+
   .faq-bento {
     --card-title-color: var(--text-high-contrast);
     display: grid;
@@ -535,6 +541,9 @@
 }
 
 @layer utilities {
+  [hidden]{
+    display: none;
+  }
   .visually-hidden {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
