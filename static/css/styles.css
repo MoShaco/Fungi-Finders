@@ -2,6 +2,22 @@
   navigation: auto;
 }
 
+@font-face {
+  font-family: 'Outfit';
+  src: local('Outfit'), url('../assets/fonts/Outfit-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: local('Outfit Bold'), url('../assets/fonts/Outfit-Bold.ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'FiraSans';
+  src: local('FiraSans'), url('../assets/fonts/FiraSans-Regular.ttf');
+}
+
 @layer resets {
   *,
   *::before,
@@ -77,22 +93,6 @@
 }
 
 @layer base {
-  @font-face {
-    font-family: 'Outfit';
-    src: local('Outfit'), url('../assets/fonts/Outfit-Regular.ttf');
-  }
-
-  @font-face {
-    font-family: 'Outfit';
-    src: local('Outfit Bold'), url('../assets/fonts/Outfit-Bold.ttf');
-    font-weight: 700;
-  }
-
-  @font-face {
-    font-family: 'FiraSans';
-    src: local('FiraSans'), url('../assets/fonts/FiraSans-Regular.ttf');
-  }
-
   :root {
     --clr-white: hsl(0, 0%, 100%);
     --clr-gray-100: hsl(0, 2%, 79%);
@@ -545,7 +545,7 @@
 }
 
 @layer utilities {
-  [hidden]{
+  [hidden] {
     display: none;
   }
   .visually-hidden {
