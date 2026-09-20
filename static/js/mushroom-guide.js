@@ -21,7 +21,7 @@ enableFiltering();
 function updateFilters(event) {
   const filterType = event.target.name;
   currentFilters[filterType] = event.target.value;
-  if (document.startViewTransition()) {
+  if (document.startViewTransition) {
     document.startViewTransition(() => filterCards());
     return;
   }
