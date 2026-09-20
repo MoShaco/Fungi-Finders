@@ -165,6 +165,13 @@
     --border-radius-3: 0.75rem;
   }
 
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-block-start: 1rem;
+    }
+  }
+
   body {
     font-size: var(--font-size-regular);
     background-color: var(--background-main);
@@ -378,7 +385,9 @@
       li {
         opacity: 0;
         translate: 100%;
-        transition: opacity 300ms, translate 875ms;
+        transition:
+          opacity 300ms,
+          translate 875ms;
         transition-delay: var(--delay, 125ms);
 
         &:nth-child(2) {
